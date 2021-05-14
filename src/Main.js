@@ -5,11 +5,11 @@ import Number from "./Number";
 function Main(props) {
     const[number, setNumber]=useState(0);
     function plus() {
-        setNumber(number+1)
+        setNumber(number+3)
     }
     function minus() {
-        if (number>0){
-            setNumber(number-1)
+        if (number>1){
+            setNumber(number-2)
         }
     }
     function sbros() {
