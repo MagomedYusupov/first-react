@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-
-
+import Buttons from "./Buttons";
+import Number from "./Number";
 
 function Main(props) {
     const[number, setNumber]=useState(0);
@@ -17,14 +17,8 @@ function Main(props) {
     }
     return (
         <div>
-            <div className="number">
-                {number}
-            </div>
-            <div className="buttons">
-                <button className="button-1" onClick={plus}>Увеличить</button>
-                <button className="button-2" onClick={minus}>Уменьшить</button>
-                <button className="button-3" onClick={sbros}>Сбросить</button>
-            </div>
+            <Number number={number}/>
+            <Buttons plus={plus} minus={minus} sbros={sbros}/>
         </div>
     );
 }
